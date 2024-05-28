@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate DApp</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="images/logo.png" alt="Real Estate DApp Logo" class="logo" />
+      <ul>
+        <li><a href="#" data-page="home">Home</a></li>
+        <li><a href="#" data-page="contract">Contracts</a></li>
+        <li><a href="#" data-page="user">User Dashboard</a></li>
+      </ul>
+    </nav>
+
+    <div id="home-page" class="page active">
+      <h1>Welcome to Real Estate DApp</h1>
+      <p>
+        Manage your real estate transactions with transparency and security
+        using blockchain technology.
+      </p>
+    </div>
+
+    <div id="contract-page" class="page">
+      <h1>Contracts</h1>
+      <form id="contract-form">
+        <div>
+          <label for="property">Property:</label>
+          <input type="text" id="property" name="property" />
+        </div>
+        <div>
+          <label for="buyer">Buyer:</label>
+          <input type="text" id="buyer" name="buyer" />
+        </div>
+        <div>
+          <label for="seller">Seller:</label>
+          <input type="text" id="seller" name="seller" />
+        </div>
+        <div>
+          <label for="price">Price:</label>
+          <input type="number" id="price" name="price" />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="contract-list">
+        <h2>Contract List</h2>
+        <ul>
+          <!-- Contracts will be dynamically inserted here -->
+        </ul>
+      </div>
+    </div>
+
+    <div id="user-page" class="page">
+      <h1>User Dashboard</h1>
+      <p>Welcome to your dashboard. Here you can manage your contracts.</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
